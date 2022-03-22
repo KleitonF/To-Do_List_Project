@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 10px;
+    background-color: black;
+    font-family: "open sans","helvetica neue",Helvetica,Arial,sans-serif;
+}
+
+#titlePG{
+    font-size: 26px;
+    color: white;
+    font-family: "open sans","helvetica neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+#form{
+    max-width: 20%;
+    margin: auto;
+    overflow:hidden;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    box-sizing: border-box
+}
+
+#inputTitleTask{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+#inputDescTask{
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#buttAd{
+    width: 100%;
+    background-color: rgb(40, 128, 0);
+    color: white;
+}
+
+#buttAp{
+    width: 100%;
+    background-color: rgb(189, 186, 34);
+    color: white;
+}
+
+#buttCl{
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+#mural{
+    width: 80%;
+    margin: auto;
+}
+
+.contTask{
+    background-color: rgb(39, 39, 39);
+    box-sizing: content-box;
+    overflow:hidden;
+    margin: 5px;
+}
+
+.titleTask{
+    text-align: center;
+    color: yellow;
+}
+
+.descTask{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    text-align: center;
+}
+
+.tarefa{
+    float: left;
+    color: rgb(190, 190, 0);
+    margin: 3px;
+}
+
+.btX{
+    float: right;
+}
+
+.apagado{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
