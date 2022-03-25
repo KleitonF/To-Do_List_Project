@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
+
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width,
      initial-scale=1.0">
-    
-     <link rel="stylesheet" href="./css/style.css">
-    
+
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Lista de Tarefas</title>
 
 </head>
 
 <body onload="funcLoad()">
-    <h1 id="titlePG">To-do List</h1>
-    <br>
     <!-- div contendo os campos de preenchimento da lista -->
-    <div id="form">
-        <!-- Campo de texto para escrever uma nova tarefa -->
-        <input type="text" id="inputTitleTask" placeholder="Título da Task">
+    <section id="s1">
+        <div id="form">
+            <h1 id="titlePG">To-do List</h1>
+            <br>
+            <!-- Campo de texto para escrever uma nova tarefa -->
+            <input type="text" id="inputTitleTask" placeholder="Título da Task">
 
-        <!-- Descrição da tarefa -->
-        <textarea name="" id="inputDescTask" placeholder="Descrição da Task"></textarea>
+            <!-- Descrição da tarefa -->
+            <textarea name="" id="inputDescTask" placeholder="Descrição da Task"></textarea>
 
-        <!-- Botão para adicionar a nova tarefa na memoria e mostra-la na página -->
-        <input type="button" id ="buttAd" value="Adicionar" onclick="funcBtAdd()">
+            <div id="btns">
+                <!-- Botão para adicionar a nova tarefa na memoria e mostra-la na página -->
+                <input type="button" id="buttAd" value="Adicionar" onclick="funcBtAdd()">
 
-        <!-- Botão para limpar toda a memoria a apagar tudo da página. -->
-        <input type="button" id ="buttCl" value="limpar" onclick="funcBtClear()">
-    </div>
-    
+                <!-- Botão para limpar toda a memoria a apagar tudo da página. -->
+                <input type="button" id="buttCl" value="limpar" onclick="funcBtClear()">
+            </div>
+        </div>
+    </section>
+
     <!-- Div mural, onde as tarefas serão exibidas -->
     <div id="mural">
-
     </div>
-<script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -2,95 +2,159 @@
     margin: 0;
     padding: 0;
 }
-body{
-    padding-top: 10px;
-    background-color: black;
+
+body {
+    /* background-color: black; */
     font-family: "open sans","helvetica neue",Helvetica,Arial,sans-serif;
+    background-color: beige;
+    background-size: auto;
 }
 
-#titlePG{
+#s1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#form {
+    background-image: url(../assets/texture-task.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px 3px 10px ;
+    min-width: 320px;
+}
+
+#titlePG {
     font-size: 26px;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px black;
     font-family: "open sans","helvetica neue",Helvetica,Arial,sans-serif;
     text-align: center;
 }
 
-#form{
-    max-width: 20%;
-    margin: auto;
-    overflow:hidden;
+#inputTitleTask {
+    background-image: url(../assets/texture-task.png);
+    background-size: cover;
+    border-width: 2px;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
-    box-sizing: border-box
-}
-
-#inputTitleTask{
+    box-sizing: border-box;
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
-    width: 100%;
+    width: 300px;
 }
 
-#inputDescTask{
-    width: 100%;
+#inputDescTask {
+    background-image: url(../assets/texture-task.png);
+    background-size: cover;
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 300px;
+    max-height: 100px;
+    min-height: 30px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
 
-#buttAd{
-    width: 100%;
-    background-color: rgb(40, 128, 0);
-    color: white;
+#btns{
+    display: flex;
+    flex-direction: row;
 }
 
-#buttAp{
+#buttAd {
+    border: none;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(40, 128, 0);
+    color: white;
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#buttCl {
+    border: none;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#mural {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#buttAp {
     width: 100%;
     background-color: rgb(189, 186, 34);
     color: white;
 }
 
-#buttCl{
-    width: 100%;
-    background-color: rgb(255, 0, 0);
-    color: white;
-}
-
-#mural{
-    width: 80%;
-    margin: auto;
-}
-
-.contTask{
-    background-color: rgb(39, 39, 39);
+.contTask {
+    background-image: url(../assets/texture-task.png);
+    background-size: cover;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 3px;
     box-sizing: content-box;
-    overflow:hidden;
     margin: 5px;
+    box-shadow: 3px 3px 10px ;
+    width: 80%;
+    min-width: 350px;
 }
 
-.titleTask{
+.titleTask {
     text-align: center;
-    color: yellow;
+    color: rgb(153, 7, 7);
+    font-weight: bolder;
 }
 
-.descTask{
-    color: rgb(255, 255, 255);
+.descTask {
+    color: rgb(14, 14, 14);
     font-size: large;
+    font-weight: bolder;
     text-align: center;
 }
 
-.tarefa{
+.tarefa {
     float: left;
     color: rgb(190, 190, 0);
     margin: 3px;
 }
 
-.btX{
+.btX {
     float: right;
 }
 
-.apagado{
+.apagado {
     color: rgb(255, 0, 0);
     text-align: center;
 }
