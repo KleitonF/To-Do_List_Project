@@ -6,7 +6,7 @@ function funcShowTasks() {
   let mural = document.getElementById("mural");
   mural.innerHTML = '';
   for (let i in listTask) {
-    mural.innerHTML += "<div class='contTask'> <h2 class='titleTask'>" + i + "</h2> <p class='descTask'>" + listTask[i] + "</p> <input type='button' value='X' class='btX' onclick='funcBtRemoveItem(this)'> </div>"
+    mural.innerHTML += "<section class='contTask'> <div class='textoTsk'> <h2 class='titleTask'>" + i + "</h2> <p class='descTask'>" + listTask[i] + "</p> </div> <input type='button' value='X' class='btX' onclick='funcBtRemoveItem(this)'> </section>"
   }
 }
 
@@ -42,6 +42,7 @@ function funcBtAdd() {
 //funcRemoveItem() Ao clickar no botão "X" ao lado de uma task, remove ela da lista de task e roda funcShowTasks().
 function funcBtRemoveItem(n) {
   let n2 = n.parentElement
+  n2 = n2.children[0]
   n2 = n2.children[0]
   n2 = n2.textContent
   let listTask = localStorage.getItem("listTask")
